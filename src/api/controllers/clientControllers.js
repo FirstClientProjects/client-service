@@ -35,7 +35,7 @@ const getClient = async (req, res) => {
             return res.status(422).json(
                 new ErrorResponse(
                     422,
-                    "Get organization query was failed",
+                    "Get client query was failed",
                     "Client Id not found. Missing from the request."
                 )
             );
@@ -46,7 +46,7 @@ const getClient = async (req, res) => {
             return res.status(404).json(
                 new ErrorResponse(
                     404,
-                    "Get organization query was failed",
+                    "Get client query was failed",
                     "Client not found. Doesn't have this Id."
                 )
             );
@@ -102,7 +102,7 @@ const deleteClient = async (req, res) => {
             return res.status(422).json(
                 new ErrorResponse(
                     422,
-                    "Get organization query was failed",
+                    "Get client query was failed",
                     "Client Id not found. Missing from the request."
                 )
             );
@@ -113,7 +113,7 @@ const deleteClient = async (req, res) => {
             return res.status(404).json(
                 new ErrorResponse(
                     404,
-                    "Delete organization query was failed",
+                    "Delete client query was failed",
                     "Client not found. Doesn't have this Id."
                 )
             );
@@ -146,7 +146,7 @@ const updateClient = async(req, res) => {
             return res.status(422).json(
                 new ErrorResponse(
                     422,
-                    "Get organization query was failed",
+                    "Get client query was failed",
                     "Client Id not found. Missing from the request."
                 )
             );
@@ -162,7 +162,7 @@ const updateClient = async(req, res) => {
             return res.status(404).json(
                 new ErrorResponse(
                     404,
-                    "Update organization query was failed",
+                    "Update client query was failed",
                     "Client not found. Doesn't have this Id."
                 )
             );
